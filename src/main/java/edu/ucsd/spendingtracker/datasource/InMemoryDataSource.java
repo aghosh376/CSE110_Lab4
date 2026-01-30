@@ -18,7 +18,7 @@ public class InMemoryDataSource implements IDataSource {
     }
 
     @Override
-    public void deleteExpense(int id) {
+    public void deleteExpense(int expenseId) {
         expenses.removeIf(expense -> expense.getId() == expenseId);
     }
 }
